@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1077717598939",
+    "project_id": "new-pharmacy-stilo",
+    "storage_bucket": "new-pharmacy-stilo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077717598939:android:4b808ff9efd4a0368502fe",
+        "android_client_info": {
+          "package_name": "com.FarmacieStilo.farmacie_stilo_user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2fsedaJ4WCXY8aN5ERPprF8i1p7kp91Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

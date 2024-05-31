@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A Multi-vendor Food, Grocery, eCommerce, Pharmacy & Parcel service.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="StackFood">
+  <script charset="utf-8" src="https://js.pusher.com/7.0/pusher.min.js"></script>
+  <script type="application/javascript" src="/foo/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <meta name="google-signin-client_id" content="1000163153346-48ckm2uf7h70hmgn74kg1gq02sval158.apps.googleusercontent.com">
+  <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+  <title>FarmacieStilo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsgaZKVLKFwXctNJ2n5HMjt_N7-IwGSmY"></script>
+  <script src="iris-web-rtc_n430_w4182_0.5.0.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
+      });
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('/flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+  <style>
+    @keyframes spin {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner-box {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-border {
+      margin-bottom: 20px; /* Adjust the spacing between the circle and the logo */
+      width: 150px; /* Adjust the size of the circle as needed */
+      height: 150px;
+      padding: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: rgb(32, 49, 46);
+      background: linear-gradient(0deg, rgba(63, 249, 220, 0.1) 33%, rgb(48, 90, 84) 100%);
+      animation: spin 0.8s linear 0s infinite;
+    }
+
+    .circle-core {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      border-radius: 50%;
+      background-size: contain; /* Adjust as needed */
+      background-position: center; /* Adjust as needed */
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    img {
+      width: 150px; /* Adjust the size of the logo as needed */
+    }
+  </style>
+  <div class="spinner-box">
+    <div class="circle-border">
+      <div class="circle-core"></div>
+    </div>
+    <div class="center">
+      <img src="logo.png" alt="logo" />
+    </div>
+  </div>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAWDbGCMs34-0TnbrVdjIMLUiHah_aNLTo",
+    authDomain: "new-pharmacy-stilo.firebaseapp.com",
+    projectId: "new-pharmacy-stilo",
+    storageBucket: "new-pharmacy-stilo.appspot.com",
+    messagingSenderId: "1077717598939",
+    appId: "1:1077717598939:web:b5eaf839621c27588502fe",
+    measurementId: "G-HL22JKZPES"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="main.dart.js?version=2.1.1" type="application/javascript"></script>
+</body>
+</html>
